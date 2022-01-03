@@ -1,60 +1,43 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+:root{
+    --cor1:#54d9f762;
+    --cor2: #4996D6;
+    --cor3: #5C85ED;
+    --cor4: #494CD6;
+    --cor5:#7D54F7;
+
+    --fonte-padrao: 'Open Sans Condensed', sans-serif;
+
+    --fonte-destaque:'Mulish', sans-serif;
 }
 
-body {
-    background-color: #FCDDEC;
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
     
 }
 
-header {
-    background-color: #A5A6F6 ;
-    min-height: 150px;
-    text-align: center;
-    padding-top: 30px;
+header > h1{
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
 }
 
+main h1{
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+}
 
+main h2 {
+    font-family: var(--fonte-padrao);
+}
 
-nav{
-    background-color: #A5A6F6
-    padding: 10px; 
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
-    {
-
-    main {
-        min-width: 300px;
-        max-width: 1000px;
-        margin: auto;
-        padding: 20px;
-        background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-
-
-
-    main h2 {
-        font-family: var(--fonte-android);
-        color: var(--cor4);
-        font-size: 1.3em;
-        font-weight: normal;
-        background-image: linear-gradient(to right,var(--cor1),transparent);
-        text-indent: 8px;
-    }
-
-    main h3 {
-        font-family: var(--fonte-android);
-        color: var(--cor4);
-        font-size: 1.3em;
-        font-weight: normal;
-        background-image: linear-gradient(to right,var(--cor1),transparent);
-        text-indent: 8px;
-    }
+strong{
+    color: var(--cor4);
+}
 
     
