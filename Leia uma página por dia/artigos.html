@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leia uma página Por Dia</title>
+
+   
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+            margin: 0px;
+            padding: 20px;
+            background-color: #57C4F2;
+            font-family: 'Caveat Brush', cursive;
+            font-size: 40px;
+            color: #593205;
+            text-align: center;
+        }
+
+        header >p{
+            font-family: 'Caveat Brush', cursive;
+            color: white;
+        }
+
+        .menu{
+            width: 100%;
+            height: 50px;
+        }
+
+        .menu ul{
+            list-style: none;
+            position: relative;
+        }
+
+        .menu ul li{
+            width: 150px;
+            float: left;
+        }
+
+        .menu a {
+            padding: 15px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: #593205;
+           background-color: #57c4f21c;
+        }
+        .menu ul ul{
+            position: relative;
+            visibility: hidden;
+        }
+
+        .menu ul li:hover ul{
+            visibility: visible;
+        }
+
+        .menu a:hover{
+            background-color: #0E4359 ;
+            color: whitesmoke;
+        }
+
+        .menu ul ul li{
+            float: none;
+            border-bottom: solid 1px  #593205;;
+        }
+
+        label[for="bt_menu"]{
+            padding: 5px;
+            background-color:#0E4359 ;
+            color: white;
+            font-family:'Caveat Brush', cursive;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+        }
+
+        #bt_menu{
+            display: none;
+        }
+
+        label[for="bt_menu"]{
+            display: none;
+        }
+        @media(max-width: 800px){
+            label[for="bt_menu"]{
+            display: block;
+            }
+
+            #bt_menu:checked ~ .menu{
+                margin-left: 0;
+            }
+
+            .menu{
+                margin-top: 5px;
+                margin-left: -100%;
+                transition: all .4s;
+            }
+            .menu ul li{
+                width: 100%;
+                float: none;
+            }
+            .menu ul ul{
+                position: static;
+                overflow: hidden;
+                max-height: 0;
+                transition: all .4s;
+            }
+
+            .menu ul li:hover ul{
+                height: auto;
+                max-height: 300px;
+            }
+        }
+
+        main{
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    
+    <header>
+        <h1>Leia uma página Por Dia</h1>
+        <p>Artigos</p>
+    </header>
+
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="principal.html">Home</a></li>
+            <li><a href="Quemsomos.html">Quem Somos</a></li>
+            <li><a href="artigos.html">Artigos</a>
+                <ul>
+                    <li><a href="artigos.html">Reprogramação Lógica </a></li>
+                </ul>
+            
+            </li>
+            
+            <li><a href="videos.html">Vídeos</a></li>
+        </ul>
+    </nav>
+
+   <main>
+       <article>
+       
+           <h1>Reprogramação Lógica</h1>
+
+           <img src="imagens/coder.png" alt="Programação">
+
+           <h2> Nova Lógica </h2>
+       
+           <p>Ao acessarmos os sites de notícias ou lermos posts no Facebook, Instagram e Linkedin, somos atravessados por propostas tentadoras para mudarmos de área profissional. Há muitas sugestões, mas a campeã é associada à área da tecnologia.</p>
+
+           <p>Mas para quem já ultrapassou os 4.0 parece ser impossível de assimilar tal mudança. Isso porque, há alguns mitos que mexem com a cabeça da galera que está nesta nova fase da vida, ou seja, estou muito velho para aprender, ou até mesmo, isso é coisa para adolescente e jovem e já passei da fase.</p>
+       
+           <p>Não acredito neste mito, pois não há idade para aprender uma nova lógica e para compreender como outras coisas funcionam.</p>
+       
+            <p>Partindo disso, em dezembro de 2021 decidi aprender três coisas: HTML5, que é uma linguagem de marcação, CSS, que cuida dos estilos das páginas desenvolvidas nesta linguagem e ,por fim, iniciei os estudos em JavaScript, essa sim é uma linguagem de programação.</p>
+
+            <h2>Mais fácil que Análise Sintática</h2>
+
+            <img src="imagens/analistasistemas.png" alt="">
+
+            <p>Iniciei meu processo de aprendizagem com  HTML5 e CSS. Confesso que imaginei que seria muito complicado aprender.</p>
+
+            <p>Mas cheguei a conclusão que é mais fácil dominar a Análise Sintática em orações em Língua Portuguesa. Infelizmente,  quando fui apresentado a ela ,na antiga 7ª ́ série do antigo Ginásio, não me disseram  o porquê era importante aprender este conhecimento.</p>
+
+            <p>A minha preocupação era  decorar as conjunções, pois a professora fazia teste oral sobre o tema. O doloroso é que no ano seguinte eu não lembrava mais de nenhuma conjunção que decorei. Algo muito ilógico. </p>
+
+            <h2>Não é tão difícil </h2>
+            
+            <p><strong>Nesses dias de estudos pude aprender  3  coisas, além dos comandos e variáveis:</strong></p>
+            <ul>
+                <li>Quando damos espaço para um novo conhecimento mais “fome de aprender teremos”.</li>
+                <li>Não exagerar nas horas de estudos, pois não é a quantidade de horas que fará com que aprendamos mais rápido, mas sim a consistência diária de 40 a 50 minutos de estudos.</li>
+       
+                <li>Jamais queimar etapas de aprendizagem. Isso significa que um novo conhecimento depende de um anterior, ou seja, é preciso consolidar teoria e prática de forma concomitante.</li>
+            </ul>
+            <p>Estou neste momento estudando JavaScript, tive uma boa sensação: Por que não comecei antes!</p>
+            <p>Esses são meus pequenos passos neste universo de linguagens e códigos diversos, que sempre nos desafia e nos diz que  a cada dia precisamos aprender mais.</p>
+       
+       
+       </article>
+   </main>
+
+</body>
+</html>
